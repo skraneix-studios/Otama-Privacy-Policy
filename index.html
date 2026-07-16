@@ -70,33 +70,30 @@
 
     <div class="container">
         <h1>Privacy Policy &mdash; Otama</h1>
-        <p><strong>Effective Date:</strong> June 10, 2026</p>
+        <p><strong>Effective Date:</strong> July 16, 2026</p>
 
         <h2>1. Introduction</h2>
-        <p>Otama (&ldquo;the App&rdquo;) is a focus-oriented home screen launcher and app-blocking tool developed and provided by Skraneix Development Studios (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;). Your privacy is important to us. This Privacy Policy explains how the App handles your information.</p>
-        <p>Otama is a fully local, offline app. We do not collect, store, transmit, or share any personal data. Everything you create &mdash; your blocked apps list, routines, widgets, notes, habits, themes, focus history &mdash; stays on your device. (Otama was previously developed under the working title "Shizu" during development) </p>
+        <p>Otama (&ldquo;the App&rdquo;) is a focus and screen-time management application for Android, iOS, and iPadOS developed and provided by Skraneix Studios (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;). On Android, Otama may also operate as a home screen launcher. This Privacy Policy explains how the App handles information.</p>
+        <p>Otama is designed to keep your lock configurations, routines, focus history, game progress, settings, and other user-created content on your device. We do not operate an advertising or analytics backend. However, purchases and subscription entitlements are processed by Apple or Google and managed through RevenueCat, as described below.</p>
 
         <h2>2. Information We Collect</h2>
-        <p>We do <strong>NOT</strong> collect any personal information, including but not limited to:</p>
+        <p>We do not ask you to create an Otama account or provide your name, email address, phone number, precise location, contacts, advertising identifier, notes, or app-usage history. We do not receive:</p>
         <ul>
-            <li>Name, email, or phone number</li>
-            <li>Location data</li>
-            <li>Device identifiers (advertising ID, IMEI, MAC address, etc.)</li>
-            <li>Usage analytics</li>
-            <li>Crash reports</li>
-            <li>Which apps you have installed on your device</li>
-            <li>Which apps you block, time-lock, or focus on</li>
-            <li>Content of notes, to-dos, habits, countdowns, scratch pads, or any widget</li>
-            <li>Wallpapers or theme choices</li>
-            <li>Mini-game scores or focus session history</li>
+            <li>Your full installed-app list or the specific apps, categories, or websites you select for locks</li>
+            <li>Your Screen Time activity, focus-session history, statistics, saved allowance, or game results</li>
+            <li>The content of local titles, notes, routines, widgets, wallpapers, or themes</li>
+            <li>Advertising identifiers or cross-app tracking data</li>
+            <li>Analytics events or third-party crash reports</li>
         </ul>
-        <p>All content you create stays entirely on your device. Nothing is sent to our servers &mdash; we do not run any servers to send to.</p>
+        <p>When the App connects to RevenueCat, the service receives an automatically generated anonymous App User ID, purchase and subscription history, entitlement status, store receipt or purchase token, device type, operating-system information, locale or currency information, and connection metadata such as last-seen time and country inferred from an IP address. We do not provide RevenueCat with your name, email address, advertising identifier, selected apps, or Screen Time history.</p>
 
         <h2>3. Permissions and How They Are Used</h2>
-        <p>Otama requests several Android permissions to function as a launcher and focus tool. Each is used strictly on your device, never transmitted to us or any third party:</p>
+        <p>Otama requests only the platform permissions needed for enabled features. App selections and restriction configurations are processed locally and are not sent to Skraneix Studios or RevenueCat.</p>
+
+        <h3>Android permissions</h3>
 
         <h3>Usage Access (PACKAGE_USAGE_STATS)</h3>
-        <p>Required to detect which app you have just opened, so Otama can apply your configured interrupt-lock or time-lock to that app. Usage information is read in real-time and never logged, stored, or transmitted off the device.</p>
+        <p>Required to detect which app you have just opened, so Otama can apply your configured interrupt-lock or time-lock. App activity may be stored locally to power your on-device statistics, but it is not sent to Skraneix Studios or RevenueCat.</p>
 
         <h3>Display Over Apps (SYSTEM_ALERT_WINDOW)</h3>
         <p>Required to draw the interrupt-lock overlay &mdash; the mini-games, breathing exercises, confirmation prompts, and timer screens &mdash; on top of the app you opened. The overlay is shown only by Otama, only on your device.</p>
@@ -111,20 +108,28 @@
         <p>Required to display your installed apps in the app drawer and let you choose which apps to block, time-lock, or add to Quick Nav. The list of installed apps is read locally and never transmitted.</p>
 
         <h3>Foreground Service / Boot Completed</h3>
-        <p>Used to keep the app-monitoring service running so that locks continue working, and to restart the service after your device reboots. No data leaves the device.</p>
+        <p>Used to keep the app-monitoring service running so that locks continue working and to restart the service after your device reboots. The monitoring service does not upload your foreground-app history.</p>
+
+        <h3>Screen Time / Family Controls (iOS and iPadOS)</h3>
+        <p>Used to let you select applications, categories, and web domains and apply shields through Apple's FamilyControls, ManagedSettings, and DeviceActivity frameworks. Apple represents selections using privacy-preserving opaque tokens. Otama stores those tokens locally so it can apply your rules. We do not receive your broader Screen Time history, and the selected tokens are not sent to RevenueCat.</p>
+
+        <h3>Notifications</h3>
+        <p>Used for reminders, timer status, unlock expiry, and other App functions. Notification content is generated locally. Apple or Google may process delivery metadata as part of their operating-system notification services.</p>
+
+        <h3>Live Activities (iOS and iPadOS)</h3>
+        <p>Used to display focus or unlock timers on the Lock Screen and Dynamic Island where supported. Otama's Live Activities are created and updated locally; we do not use them for advertising or tracking.</p>
 
         <h2>4. Local Data Storage</h2>
-        <p>All data created within the App is stored locally on your device, in Android&rsquo;s standard private app storage. This includes:</p>
+        <p>App data is stored locally using the private storage mechanisms provided by Android, iOS, or iPadOS. This may include:</p>
         <ul>
             <li>Your list of blocked apps and their interrupt-lock configurations</li>
-            <li>Time-lock schedules and routines</li>
-            <li>Widget content &mdash; notes, to-dos, habit logs, countdowns, scratch pads, saved links, and similar</li>
-            <li>Home screen layout, selected wallpaper, and theme preference</li>
-            <li>Focus history and earn-time game progress</li>
-            <li>Quick Nav slot assignments</li>
+            <li>Schedules, routines, focus sessions, cooldowns, daily allowances, and saved allowance</li>
+            <li>Statistics, game progress, language, haptic, appearance, and onboarding settings</li>
+            <li>Android launcher, widget, wallpaper, theme, and Quick Nav settings where available</li>
+            <li>Opaque Screen Time selection tokens on iOS and iPadOS</li>
             <li>Premium subscription status (cached for offline use)</li>
         </ul>
-        <p>This data is fully under your control. Uninstalling the App removes all of it from your device. If you have enabled Android&rsquo;s system-wide app backup, that backup is handled by Google under their own privacy terms &mdash; we have no access to it.</p>
+        <p>Removing the App normally deletes its local app container, subject to operating-system behavior. Device backups may retain or later restore some app data. Android backups are handled by Google or your device manufacturer; iCloud and Apple device backups are handled by Apple. We do not have access to those backups. Store purchase records and RevenueCat entitlement records are not deleted merely because you remove the App.</p>
 
         <h2>5. Premium Subscriptions and Purchases</h2>
         <p>Otama offers three premium tiers:</p>
@@ -133,14 +138,14 @@
             <li><strong>Yearly subscription</strong> &mdash; auto-renews annually until cancelled.</li>
             <li><strong>Lifetime purchase</strong> &mdash; one-time payment, no recurring charges.</li>
         </ul>
-        <p>All purchases are processed securely through the Google Play Store. We do not receive:</p>
+        <p>Purchases are processed by Google Play on Android and by Apple's App Store on iOS and iPadOS. RevenueCat validates store transactions and provides the App with current entitlement status. We do not receive:</p>
         <ul>
             <li>Your payment method or billing details</li>
-            <li>Your name, email, or Google account information</li>
-            <li>Any personal identity information</li>
+            <li>Your full credit-card or bank-account information</li>
+            <li>Your Google Account password or Apple Account password</li>
         </ul>
-        <p>The App only knows whether your current device has an active subscription or lifetime purchase, based on what Google Play Billing reports. This status is cached locally to unlock premium features in the App.</p>
-        <p>You can cancel any subscription at any time through your Google Play account settings. Lifetime purchases cannot be cancelled (they are one-time payments) but are subject to Google Play&rsquo;s standard refund policies.</p>
+        <p>RevenueCat processes an anonymous identifier, transaction and purchase history, store receipt or purchase token, entitlement status, product identifiers, purchase dates, expiration dates, device and operating-system information, locale or currency, and limited connection metadata. This information is used for receipt validation, fraud prevention, restoring purchases, customer support, subscription analytics, and enabling Pro features.</p>
+        <p>Apple and Google process purchases under their own privacy policies and may associate transactions with your store account. You can manage subscriptions and request eligible refunds through the store that processed the purchase.</p>
 
         <h2>6. No Account Required</h2>
         <p>The App does not require:</p>
@@ -151,61 +156,76 @@
             <li>Phone number</li>
             <li>Any personal information</li>
         </ul>
-        <p>The App is fully functional offline. The only network activity is communication with Google Play Billing when verifying subscription status &mdash; initiated by Google&rsquo;s billing library, not by us.</p>
+        <p>Most focus and lock features operate locally. An internet connection may be required to retrieve product offerings, make or restore purchases, validate an entitlement, open external legal or support pages, or use store-provided services.</p>
 
         <h2>7. No Data Sharing, Selling, or Tracking</h2>
-        <p>We do <strong>NOT</strong>:</p>
+        <p>We do <strong>not</strong>:</p>
         <ul>
-            <li>Share your data with anyone</li>
             <li>Sell your data</li>
             <li>Use analytics SDKs (no Firebase Analytics, no Google Analytics, no Mixpanel, no Amplitude, none)</li>
             <li>Use advertising SDKs or display ads</li>
             <li>Use crash-reporting tools (no Crashlytics, no Sentry, none)</li>
-            <li>Track your behavior or build behavioral profiles</li>
+            <li>Track your behavior across unrelated apps or websites</li>
+            <li>Send your selected apps, Screen Time activity, routines, focus history, notes, or game results to RevenueCat</li>
             <li>Use cookies or device identifiers for tracking purposes</li>
         </ul>
-        <p>Because we collect no data, there is nothing for us to share or sell.</p>
+        <p>We disclose purchase-related information to RevenueCat only for the purposes described in this Policy. Apple and Google independently process store, device, and transaction information under their own terms.</p>
 
         <h2>8. Network Activity</h2>
-        <p>Otama is offline-first. The only network calls the App makes are to Google Play Billing services, to verify subscription and lifetime-purchase status. No other servers, telemetry endpoints, or content APIs are contacted by the App.</p>
+        <p>Otama is offline-first. Network activity may include:</p>
+        <ul>
+            <li>Google Play Billing or Apple StoreKit and App Store services for products, purchases, subscriptions, receipts, restoration, and refunds</li>
+            <li>RevenueCat services for offerings, anonymous customer records, purchase validation, entitlement status, and subscription management</li>
+            <li>Apple or Google operating-system services for notifications, Live Activities, store review prompts, backups, or other system features you enable</li>
+            <li>External web pages you choose to open, such as our Privacy Policy, Terms of Use, support page, or App Store listing</li>
+        </ul>
+        <p>Otama does not include advertising, behavioral analytics, or remote content feeds.</p>
 
         <h2>9. Your Rights</h2>
-        <p>Because we do not collect or store any personal information on our servers, the following applies:</p>
+        <p>Most Otama data is stored only on your device. Purchase and entitlement information is processed by Apple, Google, and RevenueCat. Depending on where you live, you may have rights to access, correct, delete, restrict, object to, or obtain a copy of personal data.</p>
 
         <h3>GDPR (EU and UK Users)</h3>
-        <p>Under GDPR / UK-GDPR you have rights such as access, deletion, portability, and objection. However, since we do not collect or store any personal data, there is no data for us to provide, modify, or delete. To remove all locally stored data, uninstall the App.</p>
+        <p>Under GDPR and UK GDPR, you may have rights of access, correction, deletion, restriction, portability, and objection. You can delete locally stored App data by removing the App, subject to device backups. For a request concerning RevenueCat data, contact us using Section 14. Because Otama does not require an account, we may need your anonymous RevenueCat App User ID or purchase information to locate the relevant record. Apple and Google handle requests concerning data in their own systems.</p>
 
         <h3>CCPA / CPRA (California Users)</h3>
-        <p>We do not collect personal information as defined under CCPA / CPRA. We do not sell or share personal information. California users may contact us, but we have no personal data to disclose or delete.</p>
+        <p>We do not sell personal information or share it for cross-context behavioral advertising. California residents may request information about applicable purchase or entitlement records processed on our behalf by RevenueCat and may request deletion where legally available. We may need information sufficient to verify and locate an anonymous record.</p>
 
         <h3>CalOPPA / Do Not Track</h3>
-        <p>We do not track users across sites or services. The App does not respond to Do Not Track (DNT) signals because the App does not track in the first place.</p>
+        <p>We do not track users across unrelated apps, sites, or services for advertising. The App does not use browser cookies and does not respond to browser Do Not Track signals.</p>
 
         <h2>10. Children&rsquo;s Privacy (COPPA)</h2>
-        <p>The App does not collect any personal information from anyone, including children under 13. The App is intended for general productivity use and is not specifically directed at children. We do not knowingly collect information from children.</p>
+        <p>The App is intended for general productivity use and is not directed to children under 13. We do not knowingly ask children to provide personal information. Store purchases and anonymous entitlement records may be processed by Apple, Google, and RevenueCat when the App is used. A parent or guardian who believes a child has provided personal information may contact us to request review or deletion where applicable.</p>
 
         <h2>11. Third-Party Services</h2>
-        <p>The App uses one third-party service:</p>
+        <p>The App uses or interacts with the following services, depending on platform and feature:</p>
         <ul>
-            <li><strong>Google Play Billing</strong> &mdash; handles all subscription and one-time purchases. Refer to <a href="https://policies.google.com/privacy">Google&rsquo;s Privacy Policy</a> for details on how Google handles payment data.</li>
+            <li><strong>Google Play and Google Play Billing</strong> &mdash; Android distribution, purchases, subscriptions, and restoration. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google&rsquo;s Privacy Policy</a>.</li>
+            <li><strong>Apple App Store and StoreKit</strong> &mdash; iOS/iPadOS distribution, purchases, subscriptions, restoration, and store review prompts. See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple&rsquo;s Privacy Policy</a>.</li>
+            <li><strong>Apple Screen Time frameworks</strong> &mdash; privacy-preserving app, category, and web-domain selection and local restriction enforcement.</li>
+            <li><strong>RevenueCat</strong> &mdash; anonymous purchase validation, offerings, entitlement management, restoration support, and subscription analytics. RevenueCat may process this information in the United States and other countries where it or its service providers operate. See <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat&rsquo;s Privacy Policy</a>.</li>
         </ul>
-        <p>No advertising networks, analytics services, crash reporters, content delivery networks, or other third-party SDKs are used.</p>
+        <p>No advertising network, behavioral analytics SDK, or third-party crash reporter is included in the App.</p>
 
         <h2>12. Security</h2>
-        <p>Because no data is transmitted to or stored on our servers, your information remains fully under your control on your device. We recommend securing your device with a passcode, PIN, or biometric lock to protect the content you create within the App.</p>
+        <p>We use platform-provided private storage for local App data and rely on encrypted network connections used by Apple, Google, and RevenueCat for purchase-related communication. No system is completely secure. We recommend securing your device with a passcode, PIN, or biometric lock and keeping the operating system current.</p>
 
-        <h2>13. Changes to This Privacy Policy</h2>
+        <h2>13. Data Retention and Deletion</h2>
+        <p>Local App data remains on your device until you reset it, remove it through an in-App control, or uninstall the App, subject to operating-system backups. Apple, Google, and RevenueCat may retain transaction, receipt, entitlement, fraud-prevention, accounting, and support records for the periods required by their services or applicable law.</p>
+        <p>You may contact us to request deletion of RevenueCat data associated with Otama where legally available. Because the App uses an anonymous RevenueCat identifier and has no Otama account, we may ask for that identifier or transaction details needed to locate and verify the record. Deleting a RevenueCat record does not erase purchase records held by Apple or Google and may affect our ability to restore Pro access.</p>
+
+        <h2>14. Changes to This Privacy Policy</h2>
         <p>We may update this Privacy Policy if the App&rsquo;s behavior changes &mdash; for example, if we add a new permission or feature in a future version. If changes occur, the updated version will be posted with a new &ldquo;Effective Date&rdquo;. Significant changes will be surfaced in the App where appropriate.</p>
 
-        <h2>14. Contact Us</h2>
+        <h2>15. Contact Us</h2>
         <p>If you have questions about this Privacy Policy or about Otama, contact us at:</p>
         <p>
-            <strong>Skraneix Development Studios</strong><br>
-            📧 <a href="mailto:support@skraneixstudios.com">support@skraneixstudios.com</a>
+            <strong>Skraneix Studios</strong><br>
+            Email: <a href="mailto:support@skraneixstudios.com">support@skraneixstudios.com</a><br>
+            Website: <a href="https://otamalauncher.skraneixstudios.com" target="_blank" rel="noopener">https://otamalauncher.skraneixstudios.com</a>
         </p>
 
         <div class="footer">
-            &copy; 2026 Skraneix Development Studios. All rights reserved.
+            &copy; 2026 Skraneix Studios. All rights reserved.
         </div>
     </div>
 
